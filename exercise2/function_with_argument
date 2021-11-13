@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>PHP Test</title>
+  </head>
+  <body>
+    <?php 
+      function escreve_nome($string){
+        return "Ola $string"; 
+      }
+      echo(escreve_nome("Christy"));
+     ?> 
+  </body>
+</html>
