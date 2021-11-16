@@ -1,0 +1,12 @@
+
+<?php 
+   $comprimento_val = $_POST["comprimento"];
+   $largura_val = $_POST["largura"];
+  function cal_Area($comp, $largura){
+   return $comp * $largura;
+  }
+  //echo "a área do retângulo
+  //com comprimento  $comprimento_val  e largura $largura_val é:  cal_Area( $comprimento_val , $largura_val)";
+
+echo cal_Area($comprimento_val, $largura_val);
+?>
