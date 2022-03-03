@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>PHP Test</title>
+  </head>
+  <body>
+    <?php 
+       class Customer{
+         public $id;
+         public $name;
+         public $email;
+         public $location;
+     //constructor
+         public function __construct(){
+         echo 'The constructor rank...';
+         }
+    public function getCustomer($id){
+       $this ->id = $id;
+       return 'Jonh Doe';
+    }
+         //magic method
+         public function __destruct(){
+           echo 'Desctructor Ran....';
+         }
+       }
+ $customer = new Customer;
+ echo $customer ->getCustomer(2);
+    ?> 
+  </body>
+</html>
