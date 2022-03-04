@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>PHP Test</title>
+  </head>
+  <body>
+    <?php 
+     //create a class
+     class Customer{
+       public $id;
+       public $name;
+       public $email;
+       public $balance;
+
+       //constructor
+       public function __construct($id,$name,$email,$balance){
+         $this ->id   = $id;
+         $this ->name = $name;
+         $this ->email = $email;
+         $this ->balance = $balance;
+       }
+       //create a function to get email
+       public function getemail(){
+         return $this-> email;
+       }
+     }
+ $customer = new Customer(1,'Jonh','jonh@gmail.com',0);
+ echo $customer ->name;
+ echo $customer -> getemail();
+    ?> 
+  </body>
+</html>
